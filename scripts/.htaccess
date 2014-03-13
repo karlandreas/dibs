@@ -1,0 +1,3 @@
+<FilesMatch "\.(js)$">
+    Header set Cache-Control "max-age=946080000, public"
+</FilesMatch>

@@ -1,0 +1,127 @@
+<!-- User Registration Form -->
+<div class="form_encap_div">
+<form id="registerForm" style="margin:0px 0px 0px 20px;">
+	<table>
+	<thead>
+		<tr>
+			<th colspan="2">
+				<p style="text-align:center;">Register with Delicion</p>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>
+			<label>Username :</label></td>
+		<td>
+			<input type="text" name="username"
+							   size="30" 
+							   onkeyup="devDibs.usernameChange(event)" 
+							   onblur="devDibs.removeSelected(event, 0)" 
+							   onfocus="devDibs.setSelected(event, 0)"
+							   onchange="devDibs.usernameChange(event)"
+							   class="largeInput" />
+		</td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+	<tr>
+		<td class="form_td1"><label>Email :</label></td>
+		<td class="form_td2">
+			<input type="text" onkeyup="devDibs.emailChange(event)" 
+							   onblur="devDibs.removeSelected(event, 1)" 
+							   onfocus="devDibs.setSelected(event, 1)"
+							   onchange="devDibs.emailChange(event)" 
+							   name="email" 
+							   size="30"
+							   class="largeInput" /></td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Given name(s) :</label></td>
+		<td>
+			<input type="text" onkeyup="devDibs.nameChange(event, 2)" 
+							   onblur="devDibs.removeSelected(event, 2)" 
+							   onfocus="devDibs.setSelected(event, 2)"
+							   onchange="devDibs.nameChange(event, 2)" 
+							   name="firstname" 
+							   size="30"
+							   class="largeInput" /></td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+	<td>
+			<label>Family name(s) :</label></td>
+		<td>
+			<input type="text" onkeyup="devDibs.nameChange(event, 3)" 
+							   onblur="devDibs.removeSelected(event, 3)" 
+							   onfocus="devDibs.setSelected(event, 3)"
+							   onchange="devDibs.nameChange(event, 3)" 
+							   name="lastname" 
+							   size="30"
+							   class="largeInput" /></td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Password :</label></td>
+		<td>
+			<input type="password" onkeyup="devDibs.setPassword(event)" 
+								   onblur="devDibs.removeSelected(event, 4)" 
+								   onfocus="devDibs.setSelected(event, 4)" 
+								   onchange="devDibs.setPassword(event)"
+								   name="password" 
+								   size="30"
+								   class="largeInput" /></td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+	<tr>
+		<td><label>Repeat Password :</label></td>
+		<td>
+			<input type="password" onkeyup="devDibs.validatePassword(event)" 
+								   onblur="devDibs.removeSelected(event, 5)" 
+								   onfocus="devDibs.setSelected(event, 5)"
+								   onchange="devDibs.validatePassword(event)"
+								   name="password" 
+								   size="30"
+								   class="largeInput" /></td>
+		<td>
+			<img class="loader_img" src="images/kit-loader.gif" />
+			<img class="confirmed_img" src="images/confirmedFormValue.svg" />
+			<img class="unconfirmed_img" src="images/unconfirmedFormValue.svg" />
+		</td>
+	</tr>
+		</tbody>
+	<tfoot>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<input id="regUsrSubmBtn" onclick="devDibs.sendRegistrationForm()" 
+										  disabled="true" 
+										  type="button" 
+										  value="Register" />
+			</td>
+		</tr>
+	</tfoot>
+	</table>
+</form>
+</div>

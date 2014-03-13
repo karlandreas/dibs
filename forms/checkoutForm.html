@@ -1,0 +1,25 @@
+<form id="checkout_form" method="post" action="http://mserve.kajohansen.com/dibs/classes/checkout_form.php" accept-charset="UTF-8">
+	<!-- Required fields -->
+		<input type="hidden" name="currency" value="978" />              
+		<input type="hidden" name="merchant" value="90181972" /> 	
+		<input type="hidden" name="acceptReturnUrl" value="http://mserve.kajohansen.com/dibs/receipt.php" /> 
+	<!-- End Required fields -->
+	
+	<!-- Optional fields -->
+		<!-- <input type="text" name="billingEmail" size="46" value="kajohansen.1@gmail.com" /> -->
+	<!-- End Optional fields -->
+	
+	<!-- Optional input parameters -->
+		<input type="hidden" name="cancelreturnurl" value="http://mserve.kajohansen.com/dibs/index.php" />
+		<input type="hidden" name="callbackUrl" value="http://mserve.kajohansen.com/dibs/classes/order_callback.php" />
+		<input type="hidden" name="language" value="en" />
+		<!-- <input type="hidden" name="addFee" value="1" /> -->
+		<input type="hidden" name="payType" value="VISA,MC" />
+		<input type="hidden" name="test" value="1" />
+		<!-- <input type="hidden" name="MAC" value="" /> -->
+		<!-- <input type="hidden" name="account" value="" /> -->
+	<!-- End Optional input parameters -->
+	
+	<input id="submit_button" type="submit" value="Submit" />
+	<input type="hidden" name="oiTypes" value="QUANTITY;UNITCODE;DESCRIPTION;AMOUNT;ITEMID;VATPERCENT" />   
+</form>

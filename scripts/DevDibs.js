@@ -86,7 +86,7 @@ var DevDibs = function() {
 	this.registerFormlabels			= null,
 	
 	// form_functions_login.js variables .........................................
-	this.confirmed				= true;
+	this.confirmed					= true;
 	
 };
 

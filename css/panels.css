@@ -106,12 +106,15 @@
 .loader_img {
 	display: none;
 }
+
 .confirmed_img {
 	display: none;
 }
+
 .unconfirmed_img {
 	display: none;
 }
+
 .largeInput {
 	padding: 3px;
 	font-size: 10pt;

@@ -16,5 +16,14 @@
 	if (isset($_SESSION['d_user'])) {
 		echo($_SESSION['first_name'] . "<br>");	
 	}
+	if (isset($_SESSION['l_user'])) {
+		echo($_SESSION['l_user']['first_name'] . "<br>");
+	}
+	if (isset($_SESSION['g_user'])) {
+		echo($_SESSION['g_user']['given_name'] . "<br>");
+	}
+	if (isset($_SESSION['f_user'])) {
+		echo($_SESSION['f_user']['name'] . "<br>");
+	}
 	?>
 </div>

@@ -85,16 +85,35 @@
 			<button style="float:right;" onclick="window.print()">Print Receipt</button>
 		</div>
 		<footer>
-			
+			<?php include('forms/footer.php'); ?>
 		</footer>
 	</div>
 	<script src="scripts/DevDibs.js" type="text/javascript"></script>
 	<script src="scripts/DevDibsProto.js" type="text/javascript"></script>
 	<script>
 		localStorage.clear();
-		devDibs.setBasketSummary();
+		document.getElementById('receipt_back_link').style.display = 'block';
+		document.getElementById('categorySelect').style.display = 'none';
 	</script>
 	</body>
+	<script>
+		<?php 
+			if (isset($_SESSION['userID'])) {
+				echo("devDibs.setLoggedIn('" . $_SESSION['userID'] . "');");
+			}  else {
+				echo("devDibs.setBasketSummary();");
+			}
+			if (isset($_SESSION['g_user'])) {
+				echo("devDibs.setLoggedIn('" . $_SESSION['g_user']['uid'] . "');");
+			}
+			if (isset($_SESSION['f_user'])) {
+				echo("devDibs.setLoggedIn('" . $_SESSION['f_user']['id'] . "');");
+			}
+			if (isset($_SESSION['l_user'])) {
+				echo("devDibs.setLoggedIn('" . $_SESSION['l_user']['uid'] . "');");
+			}
+		?>
+	</script>
 </html>
 
 

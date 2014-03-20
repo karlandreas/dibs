@@ -1,4 +1,5 @@
 <a id="back_link" onclick="devDibs.getIndex()">&laquo; Back To Index</a>
+<a id="receipt_back_link" style="display:none;float:left;margin-top: 50px;margin-left: 5px;" href="http://mserve.kajohansen.com/dibs/">&laquo; Back To Index</a>
 <div id="login_button"></div>	
 <div id="music_button"></div>	
 <div id="shop_button"></div>
